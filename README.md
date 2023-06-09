@@ -1,2 +1,7 @@
 # BankBot_using_RASA
 Chatbot using RasaFramework and Streamlit for localhost
+
+The project involves:
+1. Classifying the user intent related to checking balance, transaction history and some basic intents like greet and goodbye
+2. Identifying entities such as account number, name, phone number
+3. Based on the values extracted by entities store it in slot and if the value matches with the values is in db (you can just add a small dictionary for that)  then show a basic response, with the slot value example: {Dear {name} your {account number} has a balance of Rs. 1000}.

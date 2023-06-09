@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - check_balance
+  - check_transaction_history
+
+entities:
+  - account_number
+  - name
+  - phone_number
+
+slots:
+  account_number:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+  name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+  phone_number:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a nice day."
+
+  utter_iamabot:
+    - text: "I am a chatbot."
+
+  utter_balance:
+    - text: "Dear Michael, your account no: 1234567890 has a balance of Rs. 59000."
+
+  utter_transaction_history:
+    - text: "Sorry, transaction history is not available at the moment."

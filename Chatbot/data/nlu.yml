@@ -1,0 +1,31 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Hey
+      - Good morning
+      - Good afternoon
+
+  - intent: goodbye
+    examples: |
+      - Goodbye
+      - Bye
+      - See you later
+      - Take care
+
+  - intent: check_balance
+    examples: |
+      - What is my account balance?
+      - Can you tell me my balance?
+      - How much money do I have in my account?
+      - Check my balance
+
+  - intent: check_transaction_history
+    examples: |
+      - Show me my transaction history
+      - Can you provide my recent transactions?
+      - Transaction history
+      - View my transactions
